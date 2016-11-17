@@ -1,5 +1,6 @@
 Pod::Spec.new do |s|
 s.name             = "BSImagePicker"
+s.module_name      = "BSImagePicker"
 s.version          = "2.5.1"
 s.summary          = "BSImagePicker is a multiple image picker for iOS. UIImagePickerController replacement"
 s.description      = <<-DESC
@@ -7,14 +8,14 @@ A mix between the native iOS gallery and facebooks image picker. Allows you to p
 It is intended as a replacement for UIImagePickerController for both selecting and taking photos.
 DESC
 s.homepage         = "https://github.com/mikaoj/BSImagePicker"
-s.license            = { :type => "MIT", :file => "LICENSE" }
+s.license          = "MIT"
 s.author           = { "Joakim Gyllström" => "joakim@backslashed.se" }
-s.source           = { :git => "https://github.com/mikaoj/BSImagePicker.git", :tag => s.version.to_s }
+s.source           = { :git => "https://github.com/mikaoj/BSImagePicker.git", :tag => "v#{s.version}" }
 
 s.ios.deployment_target = "8.0"
 s.requires_arc = true
 
-s.source_files = 'Pod/Classes/**/*.swift'
+s.source_files = 'Pod/Classes/**/*.{swift}'
 s.resource_bundles = {
 'BSImagePicker' => ['Pod/Assets/*.png',
 'Pod/Assets/*.xib',
